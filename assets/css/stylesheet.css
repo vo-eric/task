@@ -22,12 +22,28 @@ ul {
   padding: 0;
 }
 
+span {
+  background: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  width: 0px;
+  opacity: 0;
+  transition: .3s linear;
+}
+
 li {
   background: white;
   height: 40px;
   line-height: 40px;
-  padding-left: 20px;
   color: #666;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1;
 }
 
 li:nth-child(2n) {
@@ -41,6 +57,7 @@ input {
   padding: 13px 13px 13px 20px;
   box-sizing: border-box;
   color: #2980b9;
+  border: 3px solid rgba(0, 0, 0, 0);
 }
 
 input:focus {
